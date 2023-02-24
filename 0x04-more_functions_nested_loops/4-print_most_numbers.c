@@ -6,18 +6,19 @@
  * Return: Always 0.
  */
 void print_most_numbers(void)
-{ 
-	int c;
+{
+	int c = 0;
 
-	for (c = 48; c < 58; c++)
- 	{
-		if (c != 50)
+	for (; c <= 9; c++)
 	{
-	if (c != 52)
+	if (c == 2 || c == 4)
 	{
-	_putchar(c);
+	continue;
 	}
+	else
+	{
+	_putchar(c + '0');
 	}
 	}
 	_putchar('\n');
-}		
+}
